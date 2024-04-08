@@ -30,7 +30,7 @@ from numpy import interp
 import pygame
 import os
 pygame.mixer.init()
-pygame.mixer.music.load(os.path.abspath('src/bumperbot_vision/resource/aud_chomp.mp3'))
+pygame.mixer.music.load(os.path.abspath('src/ROS2_MB/bumperbot_vision/resource/aud_chomp.mp3'))
 
 from . import config
 
@@ -258,7 +258,7 @@ class bot_motionplanner():
                     self.goal_not_reached_flag = False
                     
                     # Play the party song, Mention that reached goal
-                    pygame.mixer.music.load(os.path.abspath('src/bumperbot_vision/resource/Goal_reached.wav'))
+                    pygame.mixer.music.load(os.path.abspath('/src/ROS2_MB/bumperbot_vision/resource/Goal_reached.wav'))
                     pygame.mixer.music.play()
             # Still doing mini-goals?
             else:
